@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" contet="descrição do contúdo do site">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="FMB">
+
+    <title>Cardápio - Cafeteria</title>
+
+    <style type="text/css">
+
+    @charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Montserrat:wght@300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 320px){
+    header{
+        width: 100%;
+        height: 200px;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;      
+
+    }
+
+    header:after{
+        width: 100%;
+        height: 200px;
+        background-image: url('../imagens/pexels-kevin-menajang-982612.jpg') ;
+        background-size: 100%;
+
+
+        content: "";
+        opacity: 0.3;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;   
+
+    }
+
+    body{
+        width: 100%;
+
+        background-color: #343030;
+    }
+
+    main{
+        width: 90%;
+
+        margin: 0 auto;
+    }
+
+    footer{
+        font-family: 'Montserrat', sans-serif;
+        color: aliceblue;
+        text-align: center;
+
+        line-height: 2;
+
+        margin: 5% 0;
+    }
+}
+   
+img{
+    width: 100%;
+}
+
+.text img{
+    width: 25%;
+}
+
+h1{
+    font-family: 'Berkshire Swash', cursive;
+}
+
+h2{
+    width: 150px;
+    text-align: center;
+    margin: 5% auto;
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+span{
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+
+    text-decoration: underline;
+}
+
+.text{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table{
+    margin: 5% 0;
+    width: 100%;
+
+    border-bottom: 1px dotted aliceblue;
+} 
+
+
+.flavor{
+    color: aliceblue;
+    width: 50%;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flavor h3{
+    color: #e08826;
+    padding: 4.9% 0;
+    border-bottom: solid 1px #e08826;
+}
+
+.size-m, .size-g, .price{
+    width: 25%;
+    padding: 2% 0;
+
+    text-align: center;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.size-m, .size-g{
+    color: #63a9b1;
+  
+    border-bottom: solid 1px #63a9b1;
+}
+
+.price{
+    color: aliceblue;
+    font-size: 16px;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    
+    margin: 25px 0 20px 0;
+    
+    justify-content: space-evenly;
+}
+
+@media (min-width: 720px){
+    header{
+        width: 100%;
+        height: 400px;
+        margin: auto; 
+    }
+
+    h1{
+        font-size: 45px;
+    }
+
+    header:after{
+        width: 100%;
+        height: 400px;
+
+        background-image: no-repeat;
+    }
+
+    main{
+        width: 55%;
+        font-size: 20px;
+    }
+
+    .price{
+        font-size: 20px;
+    }
+
+    .text img{
+        width: 50%;
+    }
+
+    .number{
+        width: 30%;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .social{
+        width: 20%;
+        display: flex;
+        flex-direction: row;   
+        
+        margin: 25px auto 20px auto;
+        
+        justify-content: space-evenly;
+    }
+}
+        
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <div class="text">
+                <img src="./xicara.png" alt="Café Blanco">
+                <h1>Café Blanco</h1>
+                <span>Desde 1988</span>
+            </div>
+
+        </header>
+        
+        
+        <main>
+
+                <h2>Cardápio</h2>
+
+            <div class="cafe">
+
+               <table>
+                   <tr> 
+                       <!--Começo TIPO-->
+                       <td class="flavor"><h3>
+                           Café
+                       </h3></td>
+                       <td class="size-m"><h3>
+                           Médio
+                       </h3></td>
+                       <td class="size-g"><h3>
+                           Grande
+                       </h3></td>
+                   </tr>
+
+                   <tr> <!--Item menu - COMEÇO-->
+                       <td class="flavor">Cafézinho</td>
+                       <td class="price">R$ 28,00</td>
+                       <td class="price">R$ 32,00</td>
+                   </tr> <!--Item menu - FIM-->
+
+                   <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                </tr> <!--Item menu - FIM-->
+
+                <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                </tr> <!--Item menu - FIM-->
+
+                <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                </tr> <!--Item menu - FIM-->
+
+                <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                </tr> <!--Item menu - FIM-->
+
+                <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                </tr> <!--Item menu - FIM-->
+
+                   <!--Fim TIPO-->
+
+               </table>
+
+
+                   <table>
+                       <tr>
+                    <!--Começo TIPO-->
+                    <td class="flavor"><h3>
+                    Não café
+                    </h3></td>
+                    <td class="size-m"><h3>
+                    Médio
+                    </h3></td>
+                    <td class="size-g"><h3>
+                    Grande
+                    </h3></td>
+                    </tr>
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                   
+                   <!--Fim TIPO-->
+                </table>
+
+                <table>
+                    <tr>
+                    <!--Começo TIPO-->
+                    <td class="flavor"><h3>
+                    Espresso
+                    </h3></td>
+                    <td class="size-m"><h3>
+                    Médio
+                    </h3></td>
+                    <td class="size-g"><h3>
+                    Grande
+                    </h3></td>
+                    </tr>
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price">R$ 28,00</td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <!--Fim TIPO-->
+                </table>
+
+                <table>
+                    <tr>
+                    <!--Começo TIPO-->
+                    <td class="flavor"><h3>
+                    Opcionais
+                    </h3></td>
+                    </tr>
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price"></td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price"></td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price"></td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price"></td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <!--Fim TIPO-->
+                </table>
+
+                <table>
+                    <tr>
+                    <!--Começo TIPO-->
+                    <td class="flavor"><h3>
+                    Doces
+                    </h3></td>
+                    </tr>
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price"></td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price"></td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price"></td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <tr> <!--Item menu - COMEÇO-->
+                    <td class="flavor">Cafézinho</td>
+                    <td class="price"></td>
+                    <td class="price">R$ 32,00</td>
+                    </tr> <!--Item menu - FIM-->
+                    
+                    <!--Fim TIPO-->
+                </table>
+
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            
+                <address>R: Pokraid, 310 - SBC/SP</address>
+                
+                <div class="number">
+                    <p>
+                        Tel: 11 4002-8922
+                    </p>
+                    <p>
+                        Whatsapp: 11 94002-8922
+                    </p>
+                </div>
+            
+
+
+
+            <div class="social">
+                <a href="#"><img src="./whatsapp-32.png" alt="Whatsapp"></a>
+                <a href="#"><img src="./facebook-logo-2019.png" alt="Facebook"></a>
+                <a href="#"><img src="./instagram.png" alt="Instagram"></a>
+            </div>
+
+            <p>Todos os direitos reservados.</p>
+            <p>© Copyright Nova Tec.</p>
+
+        </footer>
+
+    </div>
+    
+</body>
+
+</html>
